@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<!----------Start of head section with title of the document------------->
+<head>
+	<!-- to be displayed as the title of the page-->
+	<title>contact</title>
+	
+	<!----link to get access to External CSS-------->	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!--link for inserting social media icons in the footer-->
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--meta tag to refresh the page every 25 sec.-->
+	<meta http-equiv="refresh" content="25" >
+	
+	<!-------Internal CSS----------->
+	<style type="text/css">
+		p{
+			/*seting style for p*/
+			padding: 30px;
+		}
+
+		h3{
+			/*seting style for h3*/
+			margin-top: 20px;
+		}
+
+		#detail{
+			/*seting style for id 'detail'*/
+			text-align: center;
+			background-color: #FFD6BA;
+			width: 40%;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+
+		.contact p
+		{
+			/*seting style for paragraph of class 'contact' */
+			padding: 15px;
+			text-decoration: none;
+			color:black;
+			text-align: center;
+		}
+
+		body
+		{
+			/*seting style for body */
+			background-image: url(images/back.jpeg);
+		}
+	</style>
+	<!----------End of internal css------------->
+
+</head>
+<!--------------------------------------->
+
+<!----------------Start of body. It has a header, a navigation bar, a section of details, and a footer----------------------->
+<body>
+	<!-------Start of header------->
+	<header>
+	 	<!----Content to be written in the header------->
+		<article>
+			<div class="content-wrap">
+				<h1>Contact Details</h1>
+			</div>
+		</article>
+	</header>
+	<!----------------------->
+
+			<!-----------Navigation Bar------------>
+			<div class="nav" id="nav">
+				<!-- It provides access to different pages of the site -->	
+				<ul>
+					<li>
+						<a href="home.html">HOME</a>
+					</li>
+					<li>
+						<a href="cv.html" >CV</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
+					<li>
+						<a href="research.html">RESEARCH</a>
+					</li>
+					<li>
+						<a href="contact.html" class="active">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+			<!-- It provides access to different pages of the site -->	
+
+	<!--------Detail section.It contains an image, details and a button that redirects the user to feedback page--------------->		
+	<section>
+		<div class="content-wrap" id="detail">
+			<!--for date feature--->
+			<div id="clock"  style="padding-bottom: 20px;"></div>
+							<!--------inline css-------->
+
+			<!--forms detail section along with an image--->
+			<div class="contact">
+					<img src="images/img.jpg">	
+					<p>Name: Shreya Rai</p>
+					<p>Address: Dharan 17, Sunsari</p>
+					<p>College: Islington College</p>
+					<p>Contact No. : 9814351953 </p>
+
+			</div>
+			<br>
+			<div> 
+				<!-- button that leads to feedback page-->
+				<button>
+				<a href="feedback.html">Feedback</a>
+				</button>
+			</div>
+		</div>
+	</section>
+	<!------------------------------->
+
+	<!------------Footer section with a navigation bar and social media links --------------->
+	<footer>
+		<div class="footernav">
+				
+				<ul style="margin: 0px;">
+							<!-- links to different pages -->
+					<li>
+						<a href="home.html" class="activefooter">HOME</a>   
+					</li>
+					<li>
+						<a href="cv.html" >CV</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
+					<li>
+						<a href="research.html">RESEARCH</a>
+					</li>
+					<li>
+						<a href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="social">
+				<h3>Social</h3>
+				<!-----Links to social media accounts-------->
+				<a href="https://www.facebook.com/shreya.rai.1291421/" class="fa fa-facebook" ></a>
+
+				<a href="https://www.instagram.com/" class="fa fa-instagram" ></a>
+
+				<a href="https://www.linkedin.com/mynetwork/" class="fa fa-linkedin-square"></a>
+
+				<a href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-envelope" ></a>
+				<br>
+					<!----inline css----->
+				<p style="color: #D3D3D3; padding-left: 0px;">Thanks you, Keep smiling.</p>
+				<br>
+				   <!----inline css----->
+				<p style="color: #D3D3D3;">© 2021 All rights reserved | Created by <strong>Shreya Rai.</strong> 
+				</p> 
+			</div>
+	</footer>
+	<!-------------------------------->
+</body>
+<!----------End of the body------------->
+
+<!------provides access to External JS ------------->
+<script type="text/javascript" src="js/script.js"></script>
+</html>

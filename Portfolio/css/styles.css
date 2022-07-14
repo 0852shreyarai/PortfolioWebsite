@@ -1,0 +1,350 @@
+/* seting style for body section
+------------------------------------*/
+body {
+	color: #343434;
+	margin: 0 0 0;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+	background-color: #EDEDED;
+}
+
+/* seting style for header section
+------------------------------------*/
+header{
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	height: 300px; 
+	image-rendering: auto;
+	background-image: url(../images/sheet.jpeg);
+	background-repeat: no-repeat; 
+	width: 100%; 
+	background-size: cover; 
+}
+
+/* seting style for article section
+------------------------------------*/
+article{
+   margin-top: 50px; 
+   color: black;
+}
+
+article p{
+	text-align: center;
+}
+
+
+/* seting style for h1, h2, h2
+------------------------------------*/
+h1 {
+	font-size: 100px;
+	line-height: 1;
+	text-align: center;
+}
+
+h2{
+	font-size: 50px;
+}
+
+h3{
+	font-size: 30px;
+	margin-bottom: 0;
+	margin-top: 30px;
+}
+
+h1, h2 {
+	font-family: Snell Roundhand, cursive;
+	font-weight: 400;
+	margin: 0;
+}
+
+/* seting style for paragraph section
+------------------------------------*/
+p{    
+	font-size: 20px;
+	padding: 20px;
+	font-weight: 12;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align: justify;
+}
+
+/* seting style for unordered list
+------------------------------------*/
+ul{
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+	text-align: center;	
+}
+
+/* seting style for anchor tag of unordered list
+--------------------------------------------------*/
+ul li a{
+	color: black; 
+	font-size: 15px; 
+	padding: 7px; 
+	text-decoration: none;
+	font-size: 25px; 
+	text-align: center;
+}
+
+/* seting style for image 
+-------------------------------*/
+img{
+	height: 300px;
+
+}
+
+/* seting style and hover feature for image of class 'project-item'
+---------------------------------------------------------------------*/
+.project-item img:hover{
+	transform: scale(1.2);
+}
+
+/* seting style for table section
+------------------------------------*/
+table{
+	width: 90%;
+	border: 1px solid black;
+	text-align: left;
+	height: auto;
+	margin-left: 80px;
+	background-color: #F8F8F8;
+	
+}
+
+/* seting style for button 
+--------------------------------*/
+button{
+	padding: 15px;
+	background-color: #1C2833;
+}
+
+/* seting style for anchor section of button
+-----------------------------------------------*/
+button a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* seting style for navigation 
+----------------------------------*/
+.nav{
+	background-color: #D9D9D9;
+	text-align: center;
+	padding: 12px 12px;
+	z-index: 10;
+}
+
+.nav *{
+	display: inline;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+.nav li a {
+	padding: 22px 30px;
+}
+
+.active {
+	color: white;
+	background: black; 
+}
+
+.nav li a:hover{
+	color: white;
+	background: black;  
+}
+
+#nav {
+	overflow: hidden;
+}
+/* 
+------------------------------------*/
+
+/*sticky navigation
+--------------------------------*/
+.stickyNav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.stickyCard{
+	position: fixed;
+	top:50px;
+	background-color: #FFD6BA;
+	border-radius: 10px;
+	display: block;
+	height: 82%;
+	margin: 20px 0 20px 70px;
+	width: 25%;
+  }
+
+/*seting style for class 'content' and 'content-wrap'
+-------------------------------------------------------*/
+.content{
+	padding-left: 30px;
+}
+/*added*/
+.content-wrap {
+	width: 70%;
+	margin: 0 auto;
+	padding: 35px 0;
+}
+
+/* seting style for id 'clock'
+------------------------------------*/
+#clock{
+	font-family: sans-serif;
+	font-size: 20px;
+	text-align: right;
+	padding: 10px;
+	columns: black;
+}
+
+/*seting style for class 'divider' if the section is smaller that the class
+---------------------------------------------------------------------------------*/
+.divider > section {
+	border-bottom: 1px dashed black;
+	padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+	 border-bottom: none;
+}
+
+/* seting style for row and column
+------------------------------------*/
+.row{    
+	align-content: center; 
+	
+}
+
+.leftcolumn{
+	border-radius: 10px;
+	background-color:  #FFD6BA;
+	border-radius: 10px;
+	display: block;
+	height: 90%;
+	margin: 50px 0 20px 100px;
+	float: left;
+	width: 25%;	
+}
+
+.rightcolumn{
+	margin: 40px;
+	float: right;
+	width: 60%	
+}
+
+
+/* seting style for class 'project-item'
+-------------------------------------------*/
+.project-item {
+	overflow: hidden;
+	font-size: 15px;
+}
+.project-item img{
+	width: 30%; 
+	height: 400px; 
+	padding: 20px;
+}
+
+@media screen and (min-width:750px){
+	.project-item img {
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+
+/* seting style for class 'education'
+------------------------------------*/
+.education{
+	background-size: cover;
+	background-color: #FF8500;
+}
+
+.education p {
+	width: 60%;
+}
+
+/* seting style for class 'research'
+------------------------------------*/
+.research{
+	text-align: center;
+	padding-top: 30px;
+
+}
+
+.research img{
+	width: 600px;
+	height: 800px;
+	padding: 20px;
+	
+}
+
+.research h2{
+	text-align: center;
+}
+
+
+/* seting style for footer section
+------------------------------------*/
+footer{ 
+	background: #1C2833;
+	text-align: center;
+	clear: both;
+	height: 420px;
+
+}
+
+.footernav *{
+	color: #D3D3D3;
+	font-size: 18px;
+}
+
+.footernav ul li{
+	display: inline;
+
+}
+
+.activefooter {
+	color:  white;
+}
+
+footer h3{
+	padding: 20px;
+	color: #FDFEFE;
+}
+
+footer  a{
+  text-decoration: none;
+}
+
+footer p {
+	text-align: center;
+}
+
+.social a{
+	color: black;
+	font-size: 32px; 
+	border-radius: 50%;
+	width: 30px; 
+	background-color: white; 
+	opacity: 0.2;
+	padding: 12px;
+}
+
+
+
+
+
+
+
+
+

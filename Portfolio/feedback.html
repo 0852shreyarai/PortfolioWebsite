@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<html>
+<!-----Start of head section with title of the document------->
+<head>
+	<!-- to be displayed as the title of the page-->
+	<title>feedback</title>
+
+	<!-------link to get access to External CS----------->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!--link for social media icons in the footer-->
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-------Internal CSS----------->
+	<style type="text/css">
+		
+		#form
+		{
+			/*seting style for id 'form'*/
+			text-align: center;
+			background-color: #FFD6BA;
+			padding: 60px;
+			width: 40%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 25px;
+		}
+
+		body
+		{
+			/*seting style for body section*/
+			background-image: url(images/back.jpeg);
+		}
+
+		.button 
+		{
+			/*seting style for class 'button'*/
+			background-color: #008CBA;
+			color: white;
+			border: 2px solid #008CBA;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;	
+		}
+
+		/*seting hover feature for class 'button'*/
+		.button:hover 
+		{
+			/*seting style for class 'button'*/
+			background-color: white; 
+		    color: black; 
+		}
+	</style>
+	<!----------End of internal css------------->
+
+</head>
+<!--------------------------------------->
+
+<!----------------Start of body. It has a header, a navigation bar, an input section, and a footer----------------------->
+<body>
+	<!-------Start of header------->
+	<header>
+		<!----Content to be written in the header------->
+		<article>
+			<div class="content-wrap">
+				<h1>Shreya Rai</h1>
+			</div>
+		</article>
+	</header>
+	<!----------------------->
+
+			<!-----------Navigation Bar------------>
+			<div class="nav" id="nav">
+				<!-- It provides access to different pages of the site -->	
+				<ul>
+					<li>
+						<a href="home.html">HOME</a>
+					</li>
+					<li>
+						<a href="cv.html" >CV</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
+					<li>
+						<a href="research.html">RESEARCH</a>
+					</li>
+					<li>
+						<a href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+			<!----------------------->
+		
+
+		<!-- The form section of the page where user needs to provide their detail and can send feedback-->	
+		<div class="content-wrap" id="form">
+
+			<!-----------creating form section------------>
+			<form name= "messageform"  onsubmit="validation()" action="feedback.html">
+					<!--for date feature--->
+					<div id="clock"></div>
+					
+					<h2>Feedback</h2>
+				
+					
+					<strong>First Name</strong>
+						<!------------ input: accepts data from the user -------------->
+						<input  type="text" name="fname" style="border: 2px solid lavender; width: 50%; height: 40px; border-radius: 10px;">
+					 
+					 <br>								 <!-----------------------------inline CSS---------------------------------------->
+					 <br>
+
+					<strong>Last Name</strong>
+						<input type="text" name="lname" style="border: 2px solid lavender; width: 50%; height: 40px; border-radius: 10px;">
+					
+					<br>							<!-----------------------------inline CSS---------------------------------------->
+					 <br>
+
+					<strong style="margin-left: 60px;">Email</strong>
+					<input type="text" name="email" style="border: 2px solid lavender; width: 50%; height: 40px; border-radius: 10px;">											<!-----------------------------inline CSS---------------------------------------->
+					<br>	
+					<br>
+
+					<strong style="margin-left: 40px;">Subject</strong>
+					<input type="text" name="subject" style="border: 2px solid lavender; width: 50%; height: 40px; border-radius: 10px;">										  <!-----------------------------inline CSS---------------------------------------->
+					<br>	
+					<br>
+
+					<strong>Gender:</strong>	
+
+					<input type="radio" name="gender" value="male"  style="border: 1px solid lavender; width: 10%; height: 20px; border-radius: 10px;">Male 							 	 <!--------------------inline CSS---------------------------------->						
+						
+					<input type="radio" name="gender" value="female" style="border: 1px solid lavender; width: 10%; height: 20px; border-radius: 10px;">female 									<!-------------------------inline CSS------------------>
+				
+						<br>
+						<br>
+					
+					<strong>Message:</strong>
+						<br>
+					<!--------------- lets the user to write multi-line message--------------------->														<textarea name="message" placeholder="enter your message" cols="20" rows="20" mail style="border: 1px solid lavender; width: 80%; height: 300px; border-radius: 10px;"></textarea>  						<!-----------------------------inline CSS---------------------------------------->
+					 <br>
+
+					<div>
+						<!------provides button to submite the form--------->
+						<input type="submit" class="button">
+			
+						</input>
+						
+					</div>
+			</form>
+		</div>
+		<!----------------------->
+
+
+	<!------------Footer section with a navigation bar and social media links --------------->
+	<footer>
+		<!---------footer navigation bar------------->
+		<div class="footernav">
+				<!-- It provides access to different pages of the site -->	
+					<!------inline css---------->
+				<ul style="margin: 0px;">
+					<li>
+						<a href="home.html" >HOME</a>
+					</li>
+					<li>
+						<a href="cv.html" >CV</a>
+					</li>
+					<li>
+						<a href="blog.html">BLOG</a>
+					</li>
+					<li>
+						<a href="research.html" class="activefooter">RESEARCH</a>
+					</li>
+					<li>
+						<a href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+		</div>
+
+		<div class="social">
+			<h3>Social</h3>
+				<!--------------Links to social media account---------------->
+				<a href="https://www.facebook.com/shreya.rai.1291421/" class="fa fa-facebook" ></a>
+
+				<a href="https://www.instagram.com/" class="fa fa-instagram" ></a>
+
+				<a href="https://www.linkedin.com/mynetwork/" class="fa fa-linkedin-square"></a>
+
+				<a href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-envelope" ></a>
+				<br>
+				   <!----inline css----->
+				<p style="color: #D3D3D3;">Thanks you, Keep smiling.</p>
+				<br>
+				   <!----inline css----->
+				<p style="color: #D3D3D3;">© 2021 All rights reserved | Created by <STRONG style="color:white; ">Shreya Rai.</STRONG> </p> 
+		</div>
+	</footer>
+	<!----------End of the footer------------->
+
+</body>
+<!----------End of the body------------->
+
+<!---------provides access to External JS ------------>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
